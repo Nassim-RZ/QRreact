@@ -18,4 +18,6 @@ target 'ReactApp' do
   #     flipper_post_install(installer)
   #   end
   # end
+  pod 'RNSoundPlayer', :path => '../node_modules/react-native-sound-player'
+
 end
