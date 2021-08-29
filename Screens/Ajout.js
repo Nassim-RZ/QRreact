@@ -47,6 +47,7 @@ const Ajout = ({ navigation }) => {
             )
           }
           style={{
+            
             width: 120,
             alignItems: "center",
             justifyContent: "center",
@@ -71,7 +72,7 @@ const Ajout = ({ navigation }) => {
           onPress={() => navigation.navigate("الرئيسية")}
           style={{
             width: 320,
-            backgroundColor: "#1BE0CE",
+            backgroundColor: "#52FFF5",
             top: 213,
             height: 50,
             borderTopLeftRadius: 80,

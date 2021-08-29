@@ -5,12 +5,20 @@ import {
   View,
 } from "react-native";
 
+import {SQLite} from "expo";
 import Home from "./Screens/Home";
 import Ajout from "./Screens/Ajout";
 import Coran from "./Screens/Coran";
 import JeuxV2 from "./Screens/JeuxV2";
+import Phist from "./Screens/Phist";
+import Dhist from "./Screens/Dhist";
+import Thist from "./Screens/Thist";
+import Qhist from "./Screens/Qhist";
+import Chist from "./Screens/Chist";
+import Shist from "./Screens/Shist";
 import Paramètre from "./Screens/Paramètre";
 import Connecter from "./Screens/Connecter";
+import Histoires from "./Screens/Histoires";
 import Enregistrer from "./Screens/Enregistrer";
 
 import { NavigationContainer } from "@react-navigation/native";
@@ -29,13 +37,14 @@ export default function app() {
     >
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">
+
           <Stack.Screen
             name="الرئيسية"
             component={Home}
             options={{
               headerTintColor: "white",
               headerTitleAlign: "center",
-              headerStyle: { backgroundColor: "#1BE0CE", height: 80 },
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
             }}
           />
 
@@ -46,7 +55,7 @@ export default function app() {
               title: "الاسئلة",
               headerTintColor: "white",
               headerTitleAlign: "center",
-              headerStyle: { backgroundColor: "#1BE0CE", height: 80 },
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
             }}
           />
 
@@ -57,7 +66,7 @@ export default function app() {
               title: "اقتراح السؤال",
               headerTintColor: "white",
               headerTitleAlign: "center",
-              headerStyle: { backgroundColor: "#1BE0CE", height: 80 },
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
             }}
           />
 
@@ -68,7 +77,7 @@ export default function app() {
               title: "الاعدادات",
               headerTintColor: "white",
               headerTitleAlign: "center",
-              headerStyle: { backgroundColor: "#1BE0CE", height: 80 },
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
             }}
           />
 
@@ -76,10 +85,10 @@ export default function app() {
             name="Coran"
             component={Coran}
             options={{
-              title: "القران الكريم",
+              title: "اقرأ",
               headerTintColor: "white",
               headerTitleAlign: "center",
-              headerStyle: { backgroundColor: "#1BE0CE", height: 80 },
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
             }}
           />
 
@@ -90,7 +99,7 @@ export default function app() {
               title: "إنشاء حساب",
               headerTintColor: "white",
               headerTitleAlign: "center",
-              headerStyle: { backgroundColor: "#696969", height: 80 },
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
             }}
           />
 
@@ -101,7 +110,84 @@ export default function app() {
               title: "تسجيل الدخول",
               headerTintColor: "white",
               headerTitleAlign: "center",
-              headerStyle: { backgroundColor: "#696969", height: 80 },
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
+            }}
+          />
+
+          <Stack.Screen
+            name="Histoires"
+            component={Histoires}
+            options={{
+              title: "قصص نبوية",
+              headerTintColor: "white",
+              headerTitleAlign: "center",
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
+            }}
+          />
+
+          <Stack.Screen
+            name="Phist"
+            component={Phist}
+            options={{
+              title: "قصة سيدنا آدم عليه السلام",
+              headerTintColor: "white",
+              headerTitleAlign: "center",
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
+            }}
+          />
+
+          <Stack.Screen
+            name="Dhist"
+            component={Dhist}
+            options={{
+              title: "قصة سيدنا نوح عليه السلام ",
+              headerTintColor: "white",
+              headerTitleAlign: "center",
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
+            }}
+          />
+
+          <Stack.Screen
+            name="Thist"
+            component={Thist}
+            options={{
+              title: "قصة سيدنا هود عليه السلام",
+              headerTintColor: "white",
+              headerTitleAlign: "center",
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
+            }}
+          />
+
+          <Stack.Screen
+            name="Qhist"
+            component={Qhist}
+            options={{
+              title: "قصة سيدنا صالح عليه السلام",
+              headerTintColor: "white",
+              headerTitleAlign: "center",
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
+            }}
+          />
+
+          <Stack.Screen
+            name="Chist"
+            component={Chist}
+            options={{
+              title: "قصة سيدنا يونس عليه السلام",
+              headerTintColor: "white",
+              headerTitleAlign: "center",
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
+            }}
+          />
+
+          <Stack.Screen
+            name="Shist"
+            component={Shist}
+            options={{
+              title: "قصة النبي محمد صلى الله عليه وسلم",
+              headerTintColor: "white",
+              headerTitleAlign: "center",
+              headerStyle: { backgroundColor: "#65E6DF", height: 80 },
             }}
           />
 

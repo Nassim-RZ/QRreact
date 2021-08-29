@@ -34,13 +34,14 @@ const Paramètre = ({ navigation }) => {
     >
       <View
         style={{
-          backgroundColor: "#1BE0CE",
+          borderColor:"#1BE0CE",
+          backgroundColor: "#52FFF5",
           top: 190,
           height: 65,
           fontSize: 500,
           width: 290,
           left: 60,
-          borderWidth: 3,
+          borderWidth: 5,
           borderRadius: 20,
         }}
       >
@@ -69,13 +70,14 @@ const Paramètre = ({ navigation }) => {
 
       <View
         style={{
-          backgroundColor: "#1BE0CE",
+          borderColor:"#1BE0CE",
+          backgroundColor: "#52FFF5",
           top: 210,
           height: 65,
           fontSize: 500,
           width: 290,
           left: 60,
-          borderWidth: 3,
+          borderWidth: 5,
           borderRadius: 20,
         }}
       >
@@ -107,10 +109,11 @@ const Paramètre = ({ navigation }) => {
           style={{
             width: 320,
             top: 130,
-            backgroundColor: "#1BE0CE",
+            borderColor:"#1BE0CE",
+            backgroundColor: "#52FFF5",
             height: 65,
             borderRadius: 20,
-            borderWidth: 3,
+            borderWidth: 5,
             left: 60,
             width: 290,
             fontSize: 500,
@@ -135,10 +138,11 @@ const Paramètre = ({ navigation }) => {
           style={{
             width: 320,
             top: 250,
-            backgroundColor: "#1BE0CE",
+            borderColor:"#1BE0CE",
+            backgroundColor: "#52FFF5",
             height: 65,
             borderRadius: 20,
-            borderWidth: 3,
+            borderWidth: 5,
             left: 60,
             width: 290,
             fontSize: 500,
@@ -185,7 +189,7 @@ const Paramètre = ({ navigation }) => {
           onPress={() => navigation.navigate("الرئيسية")}
           style={{
             width: 320,
-            backgroundColor: "#1BE0CE",
+            backgroundColor: "#52FFF5",
             top: 205,
             height: 50,
             borderTopLeftRadius: 80,

@@ -2,11 +2,234 @@ import { useNavigation } from "@react-navigation/core";
 import React, { useState } from "react";
 import { Text, View, FlatList,Alert, TouchableOpacity } from "react-native";
 //import PDF from 'react-native-pdf';
+import { AntDesign } from "@expo/vector-icons";
+
 
 export default function JeuxV2() {
   const navigation = useNavigation();
   
   const QustionHolder = [
+    {
+      qustion: " ما هو الكتاب المنزل على  سيدنا محمد -صلى الله عليه وسلم؟",
+      proposition: [
+        {
+          answer: "  التوراة",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "القرآن الكريم",
+          isCorrect: true,
+        },
+        {
+          answer: "الزبور",
+          isCorrect: false,
+        },
+        {
+          answer: "الإنجيل",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: " متى ولد الرسول صلى الله عليه وسلم؟",
+      proposition: [
+        {
+          answer: "  يوم السبت، الثاني عشر من شهر ربيعٍ الأول ",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "يوم الاحد، الثاني عشر من شهر ربيعٍ الأول",
+          isCorrect: false,
+        },
+        {
+          answer: "يوم الإثنين، الثاني عشر من شهر ربيعٍ الأول",
+          isCorrect: true,
+        },
+        {
+          answer: "يوم اثلاثاء، الثاني عشر من شهر ربيعٍ الأول",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: " أين ولد الرسول صلى الله عليه وسلم؟",
+      proposition: [
+        {
+          answer: " بمكّة المكرمة",
+          isCorrect: true,
+          
+        },
+        {
+          answer: "بالمدينة المنورة",
+          isCorrect: false,
+        },
+        {
+          answer: "الشام",
+          isCorrect: false,
+        },
+        {
+          answer: "القدس",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: "ما اسم والد الرسول صلى الله عليه وسلم؟",
+      proposition: [
+        {
+          answer: " عبدُ الله بن عبد المُطلب",
+          isCorrect: true,
+          
+        },
+        {
+          answer: "عبد المطلب بن هاشم",
+          isCorrect: false,
+        },
+        {
+          answer: "حمزة بن عبد المطلب",
+          isCorrect: false,
+        },
+        {
+          answer: "أبو طالب بن عبد المطلب",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: "من هي ام الرسول صلى الله عليه وسلم؟",
+      proposition: [
+        {
+          answer: " عائشة بنت أبي بكر",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "حليمة السعدية  ",
+          isCorrect: false,
+        },
+        {
+          answer: "خديجة بنت خويلد",
+          isCorrect: false,
+        },
+        {
+          answer: "آمنة بنت وهب  ",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      qustion: "من هي ام الرسول صلى الله عليه وسلم من الرضاعة؟",
+      proposition: [
+        {
+          answer: " عائشة بنت أبي بكر",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "حليمة السعدية  ",
+          isCorrect: true,
+        },
+        {
+          answer: "خديجة بنت خويلد",
+          isCorrect: false,
+        },
+        {
+          answer: "آمنة بنت وهب  ",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: "متى توفي الرسول صلى الله عليه وسلم؟",
+      proposition: [
+        {
+          answer: "  الاحد الثاني عشر من ربيع الأوّل",
+          isCorrect: false,
+          
+        },
+        {
+          answer: " الاثنين الثاني عشر من ربيع الأوّل ",
+          isCorrect: true,
+        },
+        {
+          answer: "الثلاثاء الثاني عشر من ربيع الأوّل ",
+          isCorrect: false,
+        },
+        {
+          answer: " الاربعاء الثاني عشر من ربيع الأوّل",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: "كم كان عمر الرسول صلى الله عليه وسلم حين توفيت أمه ؟",
+      proposition: [
+        {
+          answer: " 3 سنوات",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "4 سنوات ",
+          isCorrect: false,
+        },
+        {
+          answer: "5 سنوات",
+          isCorrect: false,
+        },
+        {
+          answer: "6 سنوات ",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      qustion: "كم كان عمر الرسول صلى الله عليه وسلم عندما نزل عليه الوحي ؟",
+      proposition: [
+        {
+          answer: " أربعين سنة",
+          isCorrect: true,
+          
+        },
+        {
+          answer: "خمسة وأربعين سنة ",
+          isCorrect: false,
+        },
+        {
+          answer: "خمسين سنة",
+          isCorrect: false,
+        },
+        {
+          answer: "ستين سنة ",
+          isCorrect: false,
+        },
+      ],
+    },
+    
+    {
+      qustion: "اين توفي الرسول صلى الله عليه وسلم ؟",
+      proposition: [
+        {
+          answer: " القدس",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "الشام ",
+          isCorrect: false,
+        },
+        {
+          answer: "بمكّة المكرمة",
+          isCorrect: false,
+        },
+        {
+          answer: "المدينة المنورة",
+          isCorrect: true,
+        },
+      ],
+    },
     {
       qustion: " كم عدد سور القرآن الكريم؟",
       proposition: [
@@ -25,6 +248,160 @@ export default function JeuxV2() {
         },
         {
           answer: "200  سورة",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: " ما هي أول آية نزلت في القرآن الكريم؟",
+      proposition: [
+        {
+          answer: "  سبح اسم ربك الأعلى سورة الأعلى",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "اقرأ باسم ربك الذي خلق سورة العلق",
+          isCorrect: true,
+        },
+        {
+          answer: "الحمدلله رب العالمين سورة الفاتحة",
+          isCorrect: false,
+        },
+        {
+          answer: "إذا جاء نصر الله والفتح سورة النصر",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: " في أي سورة توجد آية الكرسي؟",
+      proposition: [
+        {
+          answer: "   سورة الملك",
+          isCorrect: false,
+          
+        },
+        {
+          answer: " سورة يس",
+          isCorrect: false,
+        },
+        {
+          answer: "  سورة الكهف",
+          isCorrect: false,
+        },
+        {
+          answer: " سورة البقرة",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      qustion: " ما اسم أقصر سورة في القرآن الكريم؟",
+      proposition: [
+        {
+          answer: "   سورة الفلق",
+          isCorrect: false,
+          
+        },
+        {
+          answer: " سورة الناس",
+          isCorrect: false,
+        },
+        {
+          answer: " سورة الفيل",
+          isCorrect: false,
+        },
+        {
+          answer: " سورة الكوثر",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      qustion: " كم استغرق نزول القرآن الكريم؟",
+      proposition: [
+        {
+          answer: " 12 سنة ",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "15 سنة",
+          isCorrect: false,
+        },
+        {
+          answer: "18 سنة",
+          isCorrect: false,
+        },
+        {
+          answer: "سنة23 ",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      qustion: " ما اسم البلد الذي ذكر في القرآن الكريم؟",
+      proposition: [
+        {
+          answer: "  العراق",
+          isCorrect: false,
+          
+        },
+        {
+          answer: "مصر",
+          isCorrect: true,
+        },
+        {
+          answer: "اليمن",
+          isCorrect: false,
+        },
+        {
+          answer: "فلسطين",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: " من هو أكثر نبي ذكر اسمه في القرآن الكريم؟",
+      proposition: [
+        {
+          answer: " موسى عليه السلام",
+          isCorrect: true,
+          
+        },
+        {
+          answer: "ابراهيم عليه السلام",
+          isCorrect: false,
+        },
+        {
+          answer: " نوح عليه السلام",
+          isCorrect: false,
+        },
+        {
+          answer: " عيسى عليه السلام",
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      qustion: " ما هي السورة التي لم تبدأ ببسم الله الرحمن الرحيم؟",
+      proposition: [
+        {
+          answer: " سورة النور",
+          isCorrect: false,
+          
+        },
+        {
+          answer: " سورة الرعد",
+          isCorrect: false,
+        },
+        {
+          answer: " سورة التوبة",
+          isCorrect: true,
+        },
+        {
+          answer: "  سورة النحل",
           isCorrect: false,
         },
       ],
@@ -53,22 +430,22 @@ export default function JeuxV2() {
     },
 
     {
-      qustion: " N = 25  ?",
+      qustion: " كم عدد أجزاء القرآن الكريم؟",
       proposition: [
         {
-          answer: "65",
+          answer: "10 أجزاء",
           isCorrect: false,
         },
         {
-          answer: "25",
+          answer: "20 أجزاء",
+          isCorrect: false,
+        },
+        {
+          answer: "30 أجزاء",
           isCorrect: true,
         },
         {
-          answer: "2",
-          isCorrect: false,
-        },
-        {
-          answer: "3",
+          answer: "40 أجزاء",
           isCorrect: false,
         },
       ],
@@ -90,7 +467,7 @@ export default function JeuxV2() {
       setcurrentQustion(currentQustion + 1);
     } else {
       navigation.goBack();
-      Alert.alert("من بين 20 سؤال، قد اصبت "  );
+      
     }
   }
   return (
@@ -105,7 +482,7 @@ export default function JeuxV2() {
     <View style={{ backgroundColor: "#00ABA9", flex: 1, }}>
       <TouchableOpacity
         style={{
-          backgroundColor: "#1BE0CE",
+          backgroundColor: "#52FFF5",
           alignItems: "center",
           justifyContent: "center",
           width: 320,
@@ -116,7 +493,7 @@ export default function JeuxV2() {
           borderBottomRightRadius: 80,borderWidth: 5,
         }}
       >
-        <Text style={{ fontSize: 17 }}>المستوى :{currentQustion+1}</Text>
+        <Text style={{ fontSize: 17, }}>المستوى :{currentQustion+1}</Text>
       </TouchableOpacity>
     </View>
       <View
@@ -132,7 +509,7 @@ export default function JeuxV2() {
           
         }}
       >
-        <Text style={{ fontSize: 20, color: "black", opacity: 20, }}>
+        <Text style={{ fontSize: 20, color: "black", opacity: 20,marginTop:-40 }}>
         السؤال يقول: {QustionHolder[currentQustion]?.qustion}
         </Text>
       </View>
@@ -153,11 +530,11 @@ export default function JeuxV2() {
               <TouchableOpacity
                 onPress={() => {
                   if (item.isCorrect) {
-                    alert("GOOD JOB , Correct answer ");
+                    alert(" إجابةصحيحة,أحسنت  ");
                     setCounter(counter + 1);
                     // move to next qustion :
                   } else {
-                    alert("Wrong answer ");
+                    alert("اجابة خاطئة,ركز اكثر ");
                   }
                   MoveToNextQustion();
                 }}
@@ -180,7 +557,41 @@ export default function JeuxV2() {
           );
         }}
       />
-      
+      <View style={{ bottom: 158 }}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("الرئيسية")}
+          style={{
+            width: 320,
+            backgroundColor: "#52FFF5",
+            top: 163.5,
+            height: 50,
+            borderTopLeftRadius: 80,
+            borderTopRightRadius: 80,
+            borderWidth: 5,
+            left: 40,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+        <AntDesign
+            name="home"
+            size={24}
+            color="black"
+            style={{ right: 115, bottom: -13 }}
+          />
+          
+          <Text
+            style={{
+              fontSize: 17,
+              color: "black",
+              textAlign: "center",
+              top: -11,
+            }}
+          >
+            العودة الى الصفحة الرئيسية
+          </Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -305,40 +716,40 @@ export default function JeuxV2() {
 //           <Text style={{ fontSize: 17 }}>سورة الفاتحة</Text>
 //         </TouchableOpacity>
 //       </View>
-//       <View style={{ bottom: -68 }}>
-//         <TouchableOpacity
-//           onPress={() => navigation.navigate("الرئيسية")}
-//           style={{
-//             width: 320,
-//             backgroundColor: "#1BE0CE",
-//             top: 163.5,
-//             height: 50,
-//             borderTopLeftRadius: 80,
-//             borderTopRightRadius: 80,
-//             borderWidth: 5,
-//             left: 40,
-//             alignItems: "center",
-//             justifyContent: "center",
-//           }}
-//         >
-//           <AntDesign
-//             name="home"
-//             size={24}
-//             color="black"
-//             style={{ right: 115, bottom: -13 }}
-//           />
-//           <Text
-//             style={{
-//               fontSize: 17,
-//               color: "black",
-//               textAlign: "center",
-//               top: -10,
-//             }}
-//           >
-//             العودة الى الصفحة الرئيسية
-//           </Text>
-//         </TouchableOpacity>
-//       </View>
+      // <View style={{ bottom: -68 }}>
+      //   <TouchableOpacity
+      //     onPress={() => navigation.navigate("الرئيسية")}
+      //     style={{
+      //       width: 320,
+      //       backgroundColor: "#1BE0CE",
+      //       top: 163.5,
+      //       height: 50,
+      //       borderTopLeftRadius: 80,
+      //       borderTopRightRadius: 80,
+      //       borderWidth: 5,
+      //       left: 40,
+      //       alignItems: "center",
+      //       justifyContent: "center",
+      //     }}
+      //   >
+          // <AntDesign
+          //   name="home"
+          //   size={24}
+          //   color="black"
+          //   style={{ right: 115, bottom: -13 }}
+          // />
+      //     <Text
+      //       style={{
+      //         fontSize: 17,
+      //         color: "black",
+      //         textAlign: "center",
+      //         top: -10,
+      //       }}
+      //     >
+      //       العودة الى الصفحة الرئيسية
+      //     </Text>
+      //   </TouchableOpacity>
+      // </View>
 //     </View>
 //   );
 // };

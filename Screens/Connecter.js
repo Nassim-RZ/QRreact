@@ -14,10 +14,10 @@ import { Feather } from '@expo/vector-icons';
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialIcons } from '@expo/vector-icons';
 
+import { useState,useEffect } from "react/cjs/react.development";
+
+
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-
-
-
 
 
 const Connecter = ({ navigation }) => {
@@ -31,6 +31,7 @@ const Connecter = ({ navigation }) => {
       borderBottomWidth:10,
       borderBottomColor:"#696969",
      }}> 
+    
      <View 
         style={{
           flex:1,
@@ -143,10 +144,6 @@ const Connecter = ({ navigation }) => {
 
      </View>
      
-      
-      
-      
-
       
 
     </View>

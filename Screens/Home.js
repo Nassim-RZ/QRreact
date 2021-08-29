@@ -34,7 +34,8 @@ const Home = ({ navigation }) => {
       <TouchableOpacity
         onPress={() => navigation.navigate("Jeux")}
         style={{
-          backgroundColor: "#1BE0CE",
+          borderColor:"#1BE0CE",
+          backgroundColor: "#52FFF5",
           alignItems: "center",
           justifyContent: "center",
           width: 225,
@@ -50,7 +51,7 @@ const Home = ({ navigation }) => {
           name="ios-game-controller"
           size={24}
           color="black"
-          style={{ right: 70, bottom: -13 }}
+          style={{ right: 75, bottom: -13 }}
         />
         <Text style={{ fontSize: 17, top: -12 }}>ابدا اللعب</Text>
       </TouchableOpacity>
@@ -58,7 +59,8 @@ const Home = ({ navigation }) => {
       <TouchableOpacity
         onPress={() => navigation.navigate("Ajout")}
         style={{
-          backgroundColor: "#1BE0CE",
+          borderColor:"#1BE0CE",
+          backgroundColor: "#52FFF5",
           alignItems: "center",
           justifyContent: "center",
           width: 225,
@@ -74,7 +76,7 @@ const Home = ({ navigation }) => {
           name="help"
           size={28}
           color="black"
-          style={{ right: 70, bottom: -13 }}
+          style={{ right: 75, bottom: -13 }}
         />
         <Text style={{ fontSize: 17, top: -15 }}>اقترح سؤال</Text>
       </TouchableOpacity>
@@ -82,7 +84,8 @@ const Home = ({ navigation }) => {
       <TouchableOpacity
       onPress={() => navigation.navigate("Coran")}
         style={{
-          backgroundColor: "#1BE0CE",
+          borderColor:"#1BE0CE",
+          backgroundColor: "#52FFF5",
           alignItems: "center",
           justifyContent: "center",
           width: 225,
@@ -96,19 +99,20 @@ const Home = ({ navigation }) => {
       >
        <Feather 
           name="book-open"
-          size={24}
+          size={26}
           color="black"
-          style={{ right: 72, bottom: -10 }}
+          style={{ right: 74, bottom: -12 }}
          />
-        <Text style={{ fontSize: 17, right: -5, top: -12 }}>
-          القران الكريم
+        <Text style={{ fontSize: 17, right: -8, top: -15 }}>
+          كتب و قصص شيقة
         </Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         onPress={() => navigation.navigate("Paramètre")}
         style={{
-          backgroundColor: "#1BE0CE",
+          borderColor:"#1BE0CE",
+          backgroundColor: "#52FFF5",
           alignItems: "center",
           justifyContent: "center",
           width: 225,
@@ -124,7 +128,7 @@ const Home = ({ navigation }) => {
           name="cog"
           size={28}
           color="black"
-          style={{ right: 70, bottom: -10 }}
+          style={{ right: 75, bottom: -10 }}
         />
         <Text style={{ fontSize: 17, bottom: 15 }}>الاعدادات</Text>
       </TouchableOpacity>
